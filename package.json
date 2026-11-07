@@ -4,7 +4,7 @@
   "description": "Mindful Habit Progress & Reflection Platform",
   "private": true,
   "scripts": {
-    "build": "npm --prefix frontend install && npm --prefix frontend run build && npm --prefix backend install",
+    "build": "npm --prefix frontend install --include=dev && npm --prefix frontend run build && npm --prefix backend install",
     "start": "node backend/server.js",
     "dev": "npm run start",
     "backend": "cd backend && node server.js",
