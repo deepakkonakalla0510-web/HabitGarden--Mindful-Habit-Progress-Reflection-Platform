@@ -75,8 +75,8 @@ export function App() {
       console.error('Failed to load habits:', err);
       addToast({
         type: 'error',
-        title: 'Connection Notice',
-        message: 'Could not connect to HabitGarden server. Trying to reconnect...',
+        title: 'Database Notice',
+        message: err.message || 'Connecting to database. Please check MONGODB_URI in Render environment variables.',
       });
     } finally {
       if (!silent) setLoading(false);
