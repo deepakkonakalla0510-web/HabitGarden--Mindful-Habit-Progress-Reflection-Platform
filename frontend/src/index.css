@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: #EFE8DC;
+  }
+
+  body {
+    background-color: #FAF7F2;
+    color: #2D3748;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Lora', Georgia, serif;
+  }
+}
+
+/* Custom Botanical Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4EFE6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #A8C3A0;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #608056;
+}
+
+/* Botanical Card Styles */
+.garden-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(229, 222, 207, 0.7);
+  box-shadow: 0 4px 20px -2px rgba(45, 90, 39, 0.05), 0 2px 6px -1px rgba(45, 90, 39, 0.02);
+  border-radius: 1.25rem;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.garden-card:hover {
+  border-color: rgba(96, 128, 86, 0.4);
+  box-shadow: 0 10px 30px -4px rgba(45, 90, 39, 0.1), 0 4px 10px -2px rgba(45, 90, 39, 0.04);
+}
+
+/* Calm Glass Panel */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(244, 239, 230, 0.8);
+}
+

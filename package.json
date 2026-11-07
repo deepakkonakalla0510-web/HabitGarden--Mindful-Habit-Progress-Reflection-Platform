@@ -1,0 +1,15 @@
+{
+  "name": "habitgarden-workspace",
+  "version": "1.0.0",
+  "description": "Mindful Habit Progress & Reflection Platform - Master Workspace",
+  "private": true,
+  "scripts": {
+    "backend": "cd backend && node server.js",
+    "frontend": "cd frontend && npm run dev",
+    "test:backend": "cd backend && node test-api.js",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "author": "DEEPAK KONAKALLA (USN: 2102508559)",
+  "license": "MIT"
+}
+
